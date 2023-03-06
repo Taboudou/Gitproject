@@ -1,0 +1,154 @@
+.background{
+    background-color: #202020;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 130px;
+    
+}
+
+.formulaire {
+    position: relative;
+    max-width: 470px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 30px 120px;
+    background: white;
+    box-shadow: 0 5px 10px rgba( 0, 0, 0,0.2 );
+    overflow: hidden;
+  }
+  .form.login {
+    position: absolute;
+    left: 50%;
+    bottom: -86%;
+    transform: translateX(-50%);
+    width: calc(50% + 220px);
+    padding: 20px 140px;
+    height: 100%;
+    background: #202020;
+    transition: all 0.6s ease;
+  }
+  .formulaire.active
+    .form.login {
+    bottom: -27%;
+    border-radius: 35%;
+    box-shadow: 0 -5px
+      10px rgba(0, 0, 0, 0.1);
+  }
+  .form
+    h1 {
+    margin: 0;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .form.login
+    h1 {
+    color: white;
+    opacity: 0.2;
+  }
+  .formulaire.active
+    .form.login
+    h1 {
+    opacity: 1;
+  }
+  .formulaire.active
+    .signup
+    h1 {
+    opacity: 0.2;
+  }
+  .formulaire
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+ 
+  .form.login
+    input {
+    border: 1px
+      solid
+      #aaa;
+  }
+  .form.login
+    input:focus {
+    box-shadow: 0
+      1px 0
+      #ddd;
+  }
+  form
+    .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .checkbox
+    input[type="checkbox"] {
+    height: 16px;
+    width: 16px;
+    accent-color: #fff;
+    cursor: pointer;
+  }
+  form
+    .checkbox
+    label {
+    cursor: pointer;
+    color: #fff;
+  }
+  form a {
+    color: white;
+    text-decoration: none;
+  }
+  form
+    a:hover {
+    text-decoration: underline;
+  }
+  form
+    input[type="submit"] {
+    padding: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .formulaire form
+  .button {
+  width: auto;
+  }
+
+  .button{
+    display:block;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    color:white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration:none;
+    width: 300px;
+  }
+    .button:hover{
+        background-color: lighten(white,10%);
+        color:black;
+        border: solid 2px black;
+    }
+
+    .button--succes{
+        background-color: green;
+    }
+        button--succes:hover{
+            background-color: lighten(green,10%);
+        }
+    
+
+    .button--alert{
+        background-color: red;
+    }
+        .button--alert:hover{
+            background-color: lighten(red,10%);
+        }
+    

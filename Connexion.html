@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Time - Connexion</title>
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+    <link rel="icon" href="assets/Logo-watchtime.png">
+   
+</head>
+<body class="background">
+   
+
+    <section class="wrapper">
+        <div class="formulaire">
+            <div class="form signup">
+            <h1>Inscription</h1>
+            <form action="#">
+                <input type="text" placeholder="Nom" required />
+                <input type="text" placeholder="Prénom" required />
+                <input type="mail" placeholder="Email " required />
+                <input type="password" placeholder="Mot de passe" required />
+                <input type="submit" value="S'inscrire" class="button"/>
+            </form>
+            </div>
+    
+            <div class="form login">
+            <h1>Se connecter</h1>
+            <form action="#">
+                <input type="mail" placeholder="Email " required />
+                <input type="password" placeholder="Mot de passe" required />
+                <a href="#">Mot de passe oublié?</a>
+                <input type="submit" value="Se connecter" class="button"/>
+            </form>
+            </div>
+        </div>
+        <script>
+          const wrapper = document.querySelector(".formulaire"),
+            signupHeader = document.querySelector(".signup h1"),
+            loginHeader = document.querySelector(".login h1");
+  
+          loginHeader.addEventListener("click", () => {
+            wrapper.classList.add("active");
+          });
+          signupHeader.addEventListener("click", () => {
+            wrapper.classList.remove("active");
+          });
+        </script>
+         <script src="formulaire.js"></script>
+       
+      </section>
+</body>
+</html>
